@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Usage::
-    ./server.py
+    ./server.py <path to options.json>
 """
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from paho.mqtt import client as mqtt_client
