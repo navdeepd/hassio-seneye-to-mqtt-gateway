@@ -1,0 +1,32 @@
+{
+  "name": "Seneye MQTT Gateway",
+  "version": "1.0.1",
+  "slug": "seneye_mqtt_gateway",
+  "description": "Seneye LDE server for relaying Seneye stats to home assistant.",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "seneye": [
+      { "type": "SWS", "serial": "123456", "secret": "mysecret" }
+    ],
+    "mqtt_server": "core-mosquitto",
+    "mqtt_port": 1883,
+    "mqtt_username": "hassio",
+    "mqtt_password": "password",
+    "mqtt_topic": "python/seneye"
+  },
+  "schema": {
+    "seneye": [
+      { "type": "list(SWS|SCA)", "serial": "str", "secret": "password" }
+    ],
+    "mqtt_server": "str",
+    "mqtt_port": "int",
+    "mqtt_username": "str",
+    "mqtt_password": "str",
+    "mqtt_topic": "str"
+  },
+  "ports": {
+    "8080/tcp": 8080
+  }
+}
