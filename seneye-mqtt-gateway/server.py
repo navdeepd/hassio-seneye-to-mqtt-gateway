@@ -87,6 +87,7 @@ class S(BaseHTTPRequestHandler):
         self._set_response(response_code)
         self.wfile.write(response.encode('utf-8'))
 
+
 def get_secret(key):
     global seneye
     secret = None
