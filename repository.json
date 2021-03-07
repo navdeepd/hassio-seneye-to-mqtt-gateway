@@ -1,0 +1,5 @@
+{
+   "name": "Home Assistant Seneye to MQTT Repository",
+  "url": "http://www.github.com/navdeepd/hassio-seneye-to-mqtt-gateway",
+  "maintainer": "Navdeep Dhaliwal <34124607+navdeepd@users.noreply.github.com>"
+}
