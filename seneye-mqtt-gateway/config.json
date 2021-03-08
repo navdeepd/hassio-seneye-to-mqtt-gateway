@@ -4,7 +4,7 @@
   "slug": "seneye_mqtt_gateway",
   "description": "Seneye LDE server for relaying Seneye stats to home assistant.",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "image": "navdeepd/{arch}-seneye-mqtt-gateway",
+  "image": "navdeepd/hassio-addon-{arch}-seneye-mqtt-gateway",
   "startup": "application",
   "boot": "auto",
   "options": {
