@@ -22,4 +22,4 @@ jobs:
         args: |
           --all \
           --target seneye-mqtt-gateway \
-          --docker-hub navdeepd
+          --docker-hub navdeepd/hassio-addons
