@@ -53,12 +53,15 @@ sensor:
     name: "aquarium temperature"
     device_class: temperature
     unit_of_measurement: "°C"
+    force_update: true
   - platform: mqtt
     state_topic: "python/seneye/sws_12345u/ph"
     name: "aquarium pH"
     unit_of_measurement: "H+"
+    force_update: true
   - platform: mqtt
     state_topic: "python/seneye/sws_12345/ammonia"
     name: "aquarium ammonia"
     unit_of_measurement: "mg/L"
+    force_update: true
 ```
